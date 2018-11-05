@@ -4,5 +4,5 @@
 
 课程序号 | 课程编码 | 课程名称
 ---|---|---
-1 | introduction | [](01-introduction.md)第一讲 数据结构和算法绪论
-2 | linear | [](02-linear.md)第二讲 线性表
+1 | introduction | [第一讲 数据结构和算法绪论](01-introduction.md)
+2 | linear | [第二讲 线性表](02-linear.md)

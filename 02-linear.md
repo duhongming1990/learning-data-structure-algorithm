@@ -271,4 +271,4 @@ private static void move(int n, Character x, Character y, Character z) {
     }
 }
 ```
-<iframe height=498 width=510 src="src/main/resources/swf/汉诺塔游戏.swf" frameborder=0 allowfullscreen></iframe>
+[汉诺塔游戏](src/main/resources/swf/汉诺塔游戏.swf)

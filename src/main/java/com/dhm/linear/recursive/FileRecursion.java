@@ -1,4 +1,4 @@
-package com.dhm.recursion;
+package com.dhm.linear.recursive;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -8,6 +8,7 @@ import java.io.File;
  * @Author duhongming
  * @Email 19919902414@189.cn
  * @Date 2018/11/6 9:39
+ * 文件夹递归
  */
 @Slf4j
 public class FileRecursion {

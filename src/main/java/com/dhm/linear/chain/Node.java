@@ -1,10 +1,19 @@
 package com.dhm.linear.chain;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 /**
  * @Author duhongming
  * @Email 19919902414@189.cn
  * @Date 2018/10/23 14:28
  */
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class Node {
     /**
      * hash值
@@ -22,43 +31,4 @@ public class Node {
      * 下一个节点
      */
     private Node node;
-
-    public Node(int hash, Object key, Object value, Node node) {
-        this.hash = hash;
-        this.key = key;
-        this.value = value;
-        this.node = node;
-    }
-
-    public int getHash() {
-        return hash;
-    }
-
-    public void setHash(int hash) {
-        this.hash = hash;
-    }
-
-    public Object getKey() {
-        return key;
-    }
-
-    public void setKey(Object key) {
-        this.key = key;
-    }
-
-    public Object getValue() {
-        return value;
-    }
-
-    public void setValue(Object value) {
-        this.value = value;
-    }
-
-    public Node getNode() {
-        return node;
-    }
-
-    public void setNode(Node node) {
-        this.node = node;
-    }
 }

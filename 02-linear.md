@@ -271,7 +271,7 @@ private static void move(int n, Character x, Character y, Character z) {
     }
 }
 ```
-[视频形象展示环节：汉诺塔游戏](src/main/resources/swf/汉诺塔游戏.swf)
+[视频形象展示环节：汉诺塔游戏](src/main/resources/swf/链表/汉诺塔游戏.swf)
 
 
 #### 10.4 八皇后问题(continue)

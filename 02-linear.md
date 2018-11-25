@@ -75,7 +75,7 @@ n个结点链接成一个链表，即为线性表(a1, a2, a3, …, an)的链式�
 因为此链表的每个结点中只包含一个指针域，所以叫做单链表。
 ```
 ![](src/main/resources/images/02-LinearChainStorage.png)
-#### 3.1线性表的顺序存储结构时间复杂度
+#### 3.1线性表的链式存储结构时间复杂度
 * 访问GetElem：O(n)
 * 搜索LocateElem：O(n)
 * 插入ListInsert：O(1)

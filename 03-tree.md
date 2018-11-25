@@ -120,3 +120,6 @@ lchild|ltag|data|rtag|rchild
     变长编码：单个编码的长度不一致，可以根据整体出现频率来调节
     前缀码：所谓的前缀码，就是没有任何码字是其他码字的前缀
 ![](src/main/resources/images/03-HuffmanString.png)
+
+附思维导图：
+![](src/main/resources/xmind/03-tree.png)

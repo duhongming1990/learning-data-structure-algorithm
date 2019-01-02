@@ -1,4 +1,4 @@
-package com.dhm.linear.chain;
+package com.dhm.datastructure.linear.chain;
 
 import com.alibaba.fastjson.JSON;
 

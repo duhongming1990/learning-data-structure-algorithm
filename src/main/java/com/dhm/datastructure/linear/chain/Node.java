@@ -1,4 +1,4 @@
-package com.dhm.linear.chain;
+package com.dhm.datastructure.linear.chain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

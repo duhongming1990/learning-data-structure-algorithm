@@ -1,4 +1,4 @@
-package com.dhm.linear.recursive;
+package com.dhm.datastructure.linear.recursive;
 
 import lombok.extern.slf4j.Slf4j;
 

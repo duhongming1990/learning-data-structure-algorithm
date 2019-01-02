@@ -1,4 +1,4 @@
-package com.dhm.sort;
+package com.dhm.algorithm.sort;
 
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;

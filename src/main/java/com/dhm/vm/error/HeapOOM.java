@@ -1,4 +1,4 @@
-package com.dhm.vm;
+package com.dhm.vm.error;
 
 import java.util.ArrayList;
 import java.util.List;

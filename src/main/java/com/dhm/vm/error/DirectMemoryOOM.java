@@ -1,4 +1,4 @@
-package com.dhm.vm;
+package com.dhm.vm.error;
 
 import sun.misc.Unsafe;
 

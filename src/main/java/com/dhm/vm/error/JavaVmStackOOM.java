@@ -1,4 +1,4 @@
-package com.dhm.vm;
+package com.dhm.vm.error;
 
 /**
  * Java虚拟机栈和本地方法栈溢出

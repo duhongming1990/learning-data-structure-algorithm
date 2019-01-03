@@ -1,4 +1,4 @@
-package com.dhm.vm;
+package com.dhm.vm.error;
 
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;

@@ -9,6 +9,7 @@
 3 | tree | [第三讲 树](03-tree.md)
 4 | graph | [第四讲 图](04-graph.md)
 5 | algorithm | [第五讲 算法](05-algorithm.md)
+6 | vm | [第六讲 深入Java虚拟机](06-vm.md)
 
 ## JDK源码分析
 1. [ArrayList/Vector 的底层分析](https://github.com/duhongming1990/JCSprout/blob/master/MD/ArrayList.md)

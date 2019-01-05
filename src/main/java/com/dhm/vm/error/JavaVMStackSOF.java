@@ -3,13 +3,14 @@ package com.dhm.vm.error;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * Java虚拟机栈和本地方法栈溢出
+ * Java虚拟机栈和本地方法栈溢出(已验证)
  * @Author duhongming
  * @Email 19919902414@189.cn
  * @Date 2019/1/2 10:20
  * <p>
- * 减少栈内存容量为128k
- * -Xss128k
+ * 减少栈内存容量为256k
+ * The stack size specified is too small, Specify at least 160k
+ * -Xss256k
  */
 @Slf4j
 public class JavaVMStackSOF {

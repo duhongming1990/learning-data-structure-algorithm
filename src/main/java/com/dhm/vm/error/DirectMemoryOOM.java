@@ -5,12 +5,12 @@ import sun.misc.Unsafe;
 import java.lang.reflect.Field;
 
 /**
- * 本机直接内存溢出
+ * 本机直接内存溢出(未验证)
  * @Author duhongming
  * @Email 19919902414@189.cn
  * @Date 2019/1/2 11:49
  *
- * -Xmx10m -XX:MaxDirectMemorySize=10m
+ * -Xmx20m -XX:MaxDirectMemorySize=10m
  */
 public class DirectMemoryOOM {
 

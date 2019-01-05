@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Java堆溢出
+ * Java堆溢出(已验证)
  *
  * @Author duhongming
  * @Email 19919902414@189.cn

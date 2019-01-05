@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 运行时常量池溢出
+ * 运行时常量池溢出(已验证)
  * @Author duhongming
  * @Email 19919902414@189.cn
  * @Date 2019/1/2 11:13
  *
  * JDK 1.8中 PermSize 和 MaxPermSize 已经无效
- * -XX:PermSize=10M -XX:MaxPermSize=10M
+ * -XX:PermSize=2M -XX:MaxPermSize=2M
  *
  * JDK 1.8使用元空间（ Metaspace ）替代了永久代（ PermSize ）
  * -XX:MetaspaceSize=2m -XX:MaxMetaspaceSize=2m

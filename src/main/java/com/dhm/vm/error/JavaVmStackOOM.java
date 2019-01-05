@@ -1,13 +1,13 @@
 package com.dhm.vm.error;
 
 /**
- * Java虚拟机栈和本地方法栈溢出
+ * Java虚拟机栈和本地方法栈溢出(Mac已验证)
  * @Author duhongming
  * @Email 19919902414@189.cn
  * @Date 2019/1/2 10:31
  *
- * 减少栈内存容量为2M
- * -Xss2M
+ * 减少栈内存容量为256k
+ * -Xss256k
  */
 public class JavaVmStackOOM {
 

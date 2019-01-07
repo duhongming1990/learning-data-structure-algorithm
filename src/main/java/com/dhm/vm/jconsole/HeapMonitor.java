@@ -1,4 +1,4 @@
-package com.dhm.vm.jdk;
+package com.dhm.vm.jconsole;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,13 +13,13 @@ import java.util.List;
  * 限制Java堆的大小为10M,出现OOM时Dump出当前内存堆转储快照
  * -Xms10m -Xmx10m -XX:+HeapDumpOnOutOfMemoryError
  */
-public class HeapOOM {
+public class HeapMonitor {
     static class OOMObject{
         public byte[] placeholder = new byte[64*1024];
     }
 
     public static void main(String[] args) throws InterruptedException {
-        fillHeap(1000);
+        fillHeap(10000);
     }
 
     public static void fillHeap(int num) throws InterruptedException {

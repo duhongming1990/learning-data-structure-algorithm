@@ -11,7 +11,7 @@ import java.util.List;
  * @Date 2019/1/2 9:47
  *
  * 限制Java堆的大小为10M,出现OOM时Dump出当前内存堆转储快照
- * -Xms10m -Xmx10m -XX:+HeapDumpOnOutOfMemoryError
+ * -Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError
  */
 public class HeapOOM {
     static class OOMObject{}

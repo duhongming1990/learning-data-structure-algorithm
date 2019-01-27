@@ -10,7 +10,7 @@ import java.lang.reflect.Field;
  * @Email 19919902414@189.cn
  * @Date 2019/1/2 11:49
  *
- * -Xmx20m -XX:MaxDirectMemorySize=10m
+ * -Xmx20m -XX:MaxDirectMemorySize=10m -XX:+HeapDumpOnOutOfMemoryError
  */
 public class DirectMemoryOOM {
 

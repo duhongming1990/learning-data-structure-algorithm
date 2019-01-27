@@ -8,9 +8,8 @@ import lombok.extern.slf4j.Slf4j;
  * @Email 19919902414@189.cn
  * @Date 2019/1/2 10:20
  * <p>
- * 减少栈内存容量为256k
- * The stack size specified is too small, Specify at least 160k
- * -Xss256k
+ * 减少栈内存容量为128k
+ * -Xss128k
  */
 @Slf4j
 public class JavaVMStackSOF {

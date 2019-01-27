@@ -6,8 +6,8 @@ package com.dhm.vm.error;
  * @Email 19919902414@189.cn
  * @Date 2019/1/2 10:31
  *
- * 减少栈内存容量为256k
- * -Xss256k
+ * 减少栈内存容量为2m
+ * -Xss2m
  */
 public class JavaVmStackOOM {
 

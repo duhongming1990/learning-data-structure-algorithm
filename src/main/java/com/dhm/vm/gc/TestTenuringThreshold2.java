@@ -1,12 +1,12 @@
 package com.dhm.vm.gc;
 
 /**
- * 对象动态年龄判断
+ * 对象动态年龄判断(已验证)
  * @Author duhongming
  * @Email 19919902414@189.cn
  * @Date 2019/1/3 15:28
  *
- * -verbose:gc -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=15  -XX:+PrintTenuringDistribution
+ * -verbose:gc -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=15  -XX:+PrintTenuringDistribution -XX:+UseSerialGC
  */
 public class TestTenuringThreshold2 {
     public static final int _1M = 1 * 1024 * 1024;

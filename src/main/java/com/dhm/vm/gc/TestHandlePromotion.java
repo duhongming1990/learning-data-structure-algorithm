@@ -2,7 +2,7 @@ package com.dhm.vm.gc;
 
 /**
  *
- * 空间分配担保
+ * 空间分配担保(未验证)
  * @Author duhongming
  * @Email 19919902414@189.cn
  * @Date 2019/1/3 15:34

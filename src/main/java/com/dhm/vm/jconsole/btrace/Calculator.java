@@ -1,4 +1,4 @@
-package com.dhm.vm.btrace;
+package com.dhm.vm.jconsole.btrace;
 
 import java.util.Random;
 

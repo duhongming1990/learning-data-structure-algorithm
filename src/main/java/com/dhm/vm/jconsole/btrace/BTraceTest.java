@@ -1,4 +1,4 @@
-package com.dhm.vm.btrace;
+package com.dhm.vm.jconsole.btrace;
 
 import com.sun.btrace.annotations.*;
 
@@ -25,7 +25,7 @@ public class BTraceTest {
     }
 
 //    @OnMethod(
-//            clazz = "com.dhm.vm.btrace.Calculator",
+//            clazz = "com.dhm.vm.jconsole.btrace.Calculator",
 //            method = "add",
 //            location = @Location(Kind.RETURN)
 //    )
@@ -34,7 +34,7 @@ public class BTraceTest {
 //    }
 
 //    @OnMethod(
-//            clazz = "com.dhm.vm.btrace.Calculator",
+//            clazz = "com.dhm.vm.jconsole.btrace.Calculator",
 //            method = "add",
 //            location = @Location(Kind.RETURN)
 //    )
@@ -44,7 +44,7 @@ public class BTraceTest {
 //    }
 
 //    @OnMethod(
-//            clazz = "com.dhm.vm.btrace.Calculator",
+//            clazz = "com.dhm.vm.jconsole.btrace.Calculator",
 //            method = "add",
 //            location = @Location(value = Kind.CALL, clazz = "/.*/", method = "sleep")
 //    )
@@ -63,12 +63,12 @@ public class BTraceTest {
 //    }
 
     @OnMethod(
-            clazz = "com.dhm.vm.btrace.Calculator",
+            clazz = "com.dhm.vm.jconsole.btrace.Calculator",
             method = "add",
             location = @Location(Kind.RETURN)
     )
     public static void trace5(@Self Object calculator) {
-        println(get(field("com.dhm.vm.btrace.Calculator", "c"), calculator));
+        println(get(field("com.dhm.vm.jconsole.btrace.Calculator", "c"), calculator));
     }
 //
 //    @OnTimer(4000)

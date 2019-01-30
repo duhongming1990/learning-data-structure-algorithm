@@ -1,4 +1,4 @@
-package com.dhm.vm.jdk;
+package com.dhm.vm.jconsole.btrace;
 
 import com.sun.btrace.annotations.*;
 

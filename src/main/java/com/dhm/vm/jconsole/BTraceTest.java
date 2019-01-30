@@ -9,13 +9,13 @@ import java.io.InputStreamReader;
  * @Email 935720334@qq.com
  * @Date 2019/1/6 12:53
  */
-public class Btrace {
+public class BTraceTest {
     public int add(int a,int b){
         return a+b;
     }
 
     public static void main(String[] args) throws IOException {
-        Btrace btrace = new Btrace();
+        BTraceTest btrace = new BTraceTest();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         for (int i = 0; i < 10; i++) {
             reader.readLine();

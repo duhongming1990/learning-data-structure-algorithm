@@ -30,7 +30,7 @@ public class BinaryHeap {
     private static void buildHeap(int[] array) {
         //从最后一个非叶子节点(array.length / 2 - 1)开始，依次下沉调整
         for (int i = array.length / 2 - 1; i >= 0; i--) {
-            downAdjust(array, i,array.length);
+            downAdjustByMinHeap(array, i,array.length);
         }
     }
 
@@ -60,11 +60,11 @@ public class BinaryHeap {
     /**
      * 下沉调整
      *
-     * @param array       待调整的堆
+     * @param array       待调整的最小堆
      * @param parentIndex 要下沉的父节点
      * @param length      堆的有效大小
      */
-    public static void downAdjust(int[] array, int parentIndex, int length) {
+    public static void downAdjustByMinHeap(int[] array, int parentIndex, int length) {
 
         // temp保存父节点值，用于最后的赋值
         int temp = array[parentIndex];
@@ -78,6 +78,39 @@ public class BinaryHeap {
 
             // 如果父节点小于任何一个孩子的值，直接跳出
             if (temp < array[childIndex]) {
+                break;
+            }
+
+            //把子节点的值赋值给父节点
+            array[parentIndex] = array[childIndex];
+            parentIndex = childIndex;
+        }
+
+        //把父节点的值赋值给子节点
+        array[parentIndex] = temp;
+    }
+
+    /**
+     * 下沉调整
+     *
+     * @param array       待调整的最大堆
+     * @param parentIndex 要下沉的父节点
+     * @param length      堆的有效大小
+     */
+    public static void downAdjustByMaxHeap(int[] array, int parentIndex, int length) {
+
+        // temp保存父节点值，用于最后的赋值
+        int temp = array[parentIndex];
+
+        for (int childIndex = 2 * parentIndex + 1; childIndex < length; childIndex = 2 * childIndex + 1) {
+
+            // 如果有右孩子，且右孩子大于左孩子的值，则定位到右孩子
+            if (childIndex + 1 < length && array[childIndex+1] >= array[childIndex]) {
+                childIndex++;
+            }
+
+            // 如果父节点大于等于任何一个孩子的值，直接跳出
+            if (temp >= array[childIndex]) {
                 break;
             }
 

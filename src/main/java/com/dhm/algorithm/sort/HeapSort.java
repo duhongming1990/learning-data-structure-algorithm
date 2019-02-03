@@ -18,14 +18,14 @@ public class HeapSort {
     public static void heapSort(int[] arrays){
 
         for (int i = arrays.length/2-1; i >=0 ; i--) {
-            BinaryHeap.downAdjust(arrays,i,arrays.length);
+            BinaryHeap.downAdjustByMaxHeap(arrays,i,arrays.length);
         }
 
         for (int i = arrays.length-1; i >0; i--) {
             int temp = arrays[0];
             arrays[0] = arrays[i];
             arrays[i] = temp;
-            BinaryHeap.downAdjust(arrays,0,i);
+            BinaryHeap.downAdjustByMaxHeap(arrays,0,i);
         }
 
     }

@@ -14,7 +14,7 @@ public class BinaryHeap {
     public static void main(String[] args) {
 
         int[] array = new int[]{1, 3, 2, 6, 5, 7, 8, 9, 10, 0};
-        upAdjust(array);
+        upAdjustByMinHeap(array,array.length);
         System.out.println("Arrays.toString(array) = " + Arrays.toString(array));
 
         array = new int[]{7, 1, 3, 10, 5, 2, 8, 9, 6};
@@ -37,11 +37,11 @@ public class BinaryHeap {
     /**
      * 上浮调整
      *
-     * @param array 待调整的堆
+     * @param array 待调整的最小堆
      */
-    public static void upAdjust(int[] array) {
+    public static void upAdjustByMinHeap(int[] array,int length) {
 
-        int childIndex = array.length - 1;
+        int childIndex = length - 1;
         int parentIndex = (childIndex - 1) / 2;
 
         // temp保存父节点值，用于最后的赋值
@@ -49,7 +49,30 @@ public class BinaryHeap {
 
         while (parentIndex > 0 && temp < array[parentIndex]) {
             //把子节点的值赋值给父节点
-            array[childIndex] = parentIndex;
+            array[childIndex] = array[parentIndex];
+            childIndex = parentIndex;
+            parentIndex = (parentIndex - 1) / 2;
+        }
+        //把父节点的值赋值给子节点
+        array[childIndex] = temp;
+    }
+
+    /**
+     * 上浮调整
+     *
+     * @param array 待调整的最大堆
+     */
+    public static void upAdjustByMaxHeap(int[] array,int length) {
+
+        int childIndex = length - 1;
+        int parentIndex = (childIndex - 1) / 2;
+
+        // temp保存父节点值，用于最后的赋值
+        int temp = array[childIndex];
+
+        while (childIndex > 0 && temp >= array[parentIndex]) {
+            //把子节点的值赋值给父节点
+            array[childIndex] = array[parentIndex];
             childIndex = parentIndex;
             parentIndex = (parentIndex - 1) / 2;
         }

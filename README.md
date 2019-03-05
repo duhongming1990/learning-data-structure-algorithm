@@ -11,13 +11,6 @@
 5 | algorithm | [第五讲 算法](05-algorithm.md)
 6 | vm | [第六讲 深入Java虚拟机](06-vm.md)
 
-## JDK源码分析
-1. [ArrayList/Vector 的底层分析](https://github.com/duhongming1990/JCSprout/blob/master/MD/ArrayList.md)
-2. [LinkedList 底层分析](https://github.com/duhongming1990/JCSprout/blob/master/MD/LinkedList.md)
-3. [HashMap 底层分析](https://github.com/duhongming1990/JCSprout/blob/master/MD/HashMap.md)
-4. [HashSet 底层分析](https://github.com/duhongming1990/JCSprout/blob/master/MD/collection/HashSet.md)
-5. [LinkedHashMap 底层分析](https://github.com/duhongming1990/JCSprout/blob/master/MD/collection/LinkedHashMap.md)
-
 ## 二进制基础
 ### 1 二进制、八进制、十进制、十六进制
     二进制是Binary，简写为B

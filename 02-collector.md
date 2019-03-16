@@ -74,7 +74,7 @@ HashMap遍历的那些坑：
 4. [HashSet 底层分析](https://github.com/duhongming1990/JCSprout/blob/master/MD/collection/HashSet.md)
 5. [LinkedHashMap 底层分析](https://github.com/duhongming1990/JCSprout/blob/master/MD/collection/LinkedHashMap.md)
 
-扩展：
+扩展（缓存与路由算法）：
 
     漫画：什么是LRU算法？
     https://mp.weixin.qq.com/s/h_Ns5HY27NmL_odCYLgx_Q

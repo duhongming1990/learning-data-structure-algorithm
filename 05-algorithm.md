@@ -38,6 +38,14 @@
     优化版
 算法的时间复杂度：O(n^2)，排序效率最低的。
 
+漫画：什么是冒泡排序？
+URL:  https://mp.weixin.qq.com/s/wO11PDZSM5pQ0DfbQjKRQA
+了解，没啥用，算法时间复杂度：O(n^2)
+
+漫画：什么是鸡尾酒排序？（修订版）
+URL:  https://mp.weixin.qq.com/s/CoVZrvis6BnxBQgQrdc5kA
+了解，没啥用，算法时间复杂度：O(n^2)
+
 #### 2.2 直接选择排序
 算法的时间复杂度：O(n^2)，但移动的次数减少了。
 

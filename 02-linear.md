@@ -298,5 +298,11 @@ BF算法属于朴素的模式匹配算法，它的核心思想是：
 附思维导图：
 ![](src/main/resources/xmind/02-linear.png)
 
+漫画：
+### 漫画：如何用栈实现队列？
+https://mp.weixin.qq.com/s/IiOUgS5jZ6pgVqUAJHwNKg
+
+没啥用！！！
+
 
 

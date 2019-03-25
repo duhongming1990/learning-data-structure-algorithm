@@ -11,13 +11,13 @@
 逻辑结构和物理结构
 
 ### 2 逻辑结构
-#### 2.1 集合结构
+#### 2.1 集合结构（Collection）
 ![](src/main/resources/images/01-Collection.png)
-#### 2.2 线性结构（1对1）
+#### 2.2 线性结构（Linear、1对1）
 ![](src/main/resources/images/01-Linear.png)
-#### 2.3 树形结构（1对多）
+#### 2.3 树形结构（Tree、1对多）
 ![](src/main/resources/images/01-Tree.png)
-#### 2.4 图形结构（多对多）
+#### 2.4 图形结构（Graph、多对多）
 ![](src/main/resources/images/01-Graph.png)
 
 ### 3 物理结构
@@ -97,6 +97,10 @@ i = i * 2;
 
 附思维导图：
 ![](src/main/resources/xmind/01-introduction.png)
+
+漫画：
+### 漫画：什么是时间复杂度？
+URL:  https://mp.weixin.qq.com/s/1rYK3urLuun5WqnibJ2t3g
 
 
 

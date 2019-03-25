@@ -7,6 +7,8 @@ import lombok.extern.slf4j.Slf4j;
  * @Author duhongming
  * @Email 935720334@qq.com
  * @Date 2019/1/5 19:14
+ *
+ * 直接插入排序
  */
 @Slf4j
 public class StraightInsertSort {

@@ -24,6 +24,15 @@ public class PhantomReferenceTest {
     }
 
     public static void main(String[] args) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i=26;i<=28;i++) {
+            stringBuilder.append(
+                    "INSERT INTO sys_int_log_drds SELECT user_id,user_name,package_name,module_name,func_name,exception,`status`,error_info,channel_type,operat_name,remote_addr,create_time\n" +
+                            "FROM sys_int_log where create_time like '2019-02-"+String.format("%02d",i)+"%';\n");
+        }
+
+        System.out.println(stringBuilder.toString());
+
 
 //        PhantomReferenceTest.printlnMemory("1.原可用内存和总内存");
 //        byte[] object = new byte[10*PhantomReferenceTest.M];

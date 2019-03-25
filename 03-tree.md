@@ -144,7 +144,8 @@ URL:  https://mp.weixin.qq.com/s/ecaSI1ScMpYFkprw-2KdUA
     Mysql数据库索引基于什么数据结构？HASH表、BTREE树（B+树）
     二叉树查找某一个节点，最坏情况是树的高度
     B-树主要用于文件系统，比如MongoDB
-
+B-树中的卫星数据（Satellite Information）：
+![](src/main/resources/images/04-B-TreeSatelliteInformation.jpg)
 
 ### 漫画：什么是B+树？
 URL:  https://mp.weixin.qq.com/s/qP_qxJDV3R2QefnztgN2Tg
@@ -154,7 +155,8 @@ URL:  https://mp.weixin.qq.com/s/qP_qxJDV3R2QefnztgN2Tg
     1.单一节点存储更多的元素，使得查询的IO次数更少。
     2.所有查询都要查找到叶子节点，查询性能稳定。
     3.所有叶子节点形成有序链表，便于范围查询。
-
+B+树中的卫星数据（Satellite Information）：
+![](src/main/resources/images/04-B+TreeSatelliteInformation.jpg)
 
 ### 漫画：什么是二叉堆？（修正版）
 URL:  https://mp.weixin.qq.com/s/cq2EhVtOTzTVpNpLDXfeJg

@@ -142,7 +142,7 @@ URL:  https://mp.weixin.qq.com/s/ecaSI1ScMpYFkprw-2KdUA
 
     总结：
     Mysql数据库索引基于什么数据结构？HASH表、BTREE树（B+树）
-    二叉树查找某一个节点，最坏情况是树的高度
+    二叉树查找某一个节点，最坏情况是树的高度，O(logN)
     B-树主要用于文件系统，比如MongoDB
 B-树中的卫星数据（Satellite Information）：
 ![](src/main/resources/images/04-B-TreeSatelliteInformation.jpg)
@@ -171,11 +171,13 @@ URL:  https://mp.weixin.qq.com/s/cq2EhVtOTzTVpNpLDXfeJg
 ### 漫画：什么是堆排序？
 https://mp.weixin.qq.com/s/8Bid1naBLtEjPoP-R4HkBg
 
+    快速排序的递归和非递归空间复杂度都是O(N)，而堆排序是O(1)。
+    
 ### 漫画：什么是优先队列？
 https://mp.weixin.qq.com/s/4hXBw7sZ-NKs_asOQxS7gA
 
-    时间复杂度：O(1)
-    空间复杂度：O(nlogn)
+    空间复杂度：O(1)
+    时间复杂度：O(N*logN)
     入队上浮调整，出队下沉调整。
     优先队列不再遵循先入先出的原则，而是分为两种情况：
     最大优先队列，无论入队顺序，当前最大的元素优先出队。

@@ -1,9 +1,10 @@
 package com.dhm.algorithm.bignumber;
 
 /**
- * @Author duhongming
- * @Email 19919902414@189.cn
- * @Date 2019/1/16 15:49
+ * @author duhongming
+ * @version 1.0
+ * @description 大整数求和
+ * @date 2019-08-17 10:59
  */
 public class BigNumberAdd {
     /**
@@ -59,6 +60,13 @@ public class BigNumberAdd {
         return stringBuilder.toString();
     }
 
+    /**
+     * 大整数求和(增强版)
+     *
+     * @param bigNumberA 大整数A
+     * @param bigNumberB 大整数B
+     * @return
+     */
     public String bigNumberAddPlus(String bigNumberA, String bigNumberB) {
 
         //1.把两个大整数用数组逆序存储，数组长度等于较大整数位数+1
@@ -67,22 +75,22 @@ public class BigNumberAdd {
 
         int[] arrayA = new int[groupMaxLength];
         for (int i = 0; i < groupMaxLength; i++) {
-            int startIndex = bigNumberA.length()-(i+1)*9;
-            int endIndex = bigNumberA.length()-i*9;
-            if(startIndex<0){
+            int startIndex = bigNumberA.length() - (i + 1) * 9;
+            int endIndex = bigNumberA.length() - i * 9;
+            if (startIndex < 0) {
                 startIndex = 0;
             }
-            arrayA[i] = Integer.parseInt(bigNumberA.substring(startIndex,endIndex));
+            arrayA[i] = Integer.parseInt(bigNumberA.substring(startIndex, endIndex));
         }
 
         int[] arrayB = new int[groupMaxLength];
         for (int i = 0; i < groupMaxLength; i++) {
-            int startIndex = bigNumberB.length()-(i+1)*9;
-            int endIndex = bigNumberB.length()-i*9;
-            if(startIndex<0){
+            int startIndex = bigNumberB.length() - (i + 1) * 9;
+            int endIndex = bigNumberB.length() - i * 9;
+            if (startIndex < 0) {
                 startIndex = 0;
             }
-            arrayB[i] = Integer.parseInt(bigNumberB.substring(startIndex,endIndex));
+            arrayB[i] = Integer.parseInt(bigNumberB.substring(startIndex, endIndex));
         }
 
 
@@ -91,7 +99,7 @@ public class BigNumberAdd {
 
         //3.遍历数组，按位相加
         for (int i = 0; i < tempResult.length; i++) {
-            int temp = tempResult[i] + arrayA[i]+ arrayB[i];
+            int temp = tempResult[i] + arrayA[i] + arrayB[i];
             //判断是否进位
             if (temp >= Math.pow(10, 9)) {
                 temp = temp - (int) Math.pow(10, 9);
@@ -119,6 +127,11 @@ public class BigNumberAdd {
 
     public static void main(String[] args) {
         BigNumberAdd bigNumberAdd = new BigNumberAdd();
-        bigNumberAdd.bigNumberAddPlus("426709752318", "95481253129");
+
+        String result1 = bigNumberAdd.bigNumberAdd("426709752318", "95481253129");
+        System.out.println("result1 = " + result1);
+
+        String result2 = bigNumberAdd.bigNumberAddPlus("426709752318", "95481253129");
+        System.out.println("result2 = " + result2);
     }
 }

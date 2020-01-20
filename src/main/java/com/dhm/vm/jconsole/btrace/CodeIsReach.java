@@ -4,8 +4,6 @@ import com.sun.btrace.AnyType;
 import com.sun.btrace.BTraceUtils;
 import com.sun.btrace.annotations.*;
 
-import java.lang.reflect.Field;
-
 import static com.sun.btrace.BTraceUtils.*;
 
 /**
